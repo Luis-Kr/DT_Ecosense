@@ -1,0 +1,5 @@
+raw_data: /Users/luiskremer/Documents/PhD/Code/AngleCam/Data/VM_processing/Data/Frames
+dst_dir: data/export
+paths:
+  logger:
+    dst_dir: logs/
