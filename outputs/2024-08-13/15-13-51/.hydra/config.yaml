@@ -1,0 +1,5 @@
+raw_data: '.../...'
+dst_dir: '.../...'
+paths:
+  logger:
+    dst_dir: logs/
