@@ -2,7 +2,7 @@ defaults:
   - _self_
   - paths: ../utils/paths
 
-raw_data: "/Users/luiskremer/Documents/PhD/Code/AngleCam/Data/VM_processing/Data/Frames"
+raw_video_path: "/Users/luiskremer/Documents/PhD/Code/AngleCam/Data/VM_processing/Data/Video3.mp4"
 
 dst_dir: data/export
 
