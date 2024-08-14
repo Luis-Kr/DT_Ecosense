@@ -1,0 +1,6 @@
+raw_video_path: /Users/luiskremer/Documents/PhD/Code/AngleCam/Data/VM_processing/Data/Video3.mp4
+dst_dir: data/export
+set_size: 60
+paths:
+  logger:
+    dst_dir: logs/

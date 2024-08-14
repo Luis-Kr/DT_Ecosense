@@ -4,6 +4,9 @@ import easyocr
 from datetime import datetime
 from pathlib import Path
 
+# Custom imports
+import utils.logger as lgr
+
 def group_files_in_sets(dir_path, set_size=30):
     try:
         # Define the directory path
@@ -83,3 +86,99 @@ def extract_camera_metadata(output_dir, image_paths):
             filenames.append("File_with_name_error.jpg")
 
     return filenames
+
+
+def extract_camera_name_and_date(frame):
+    # Initialize the OCR reader
+    reader = easyocr.Reader(['en'])
+
+    # Read the image
+    image = frame
+
+    # Read the date and camera name from the image
+    result = reader.readtext(image)
+
+    # Extract and format the timestamp from the text
+    timestamp_string = result[0][1].replace(' ', '').replace(':', '.')
+    parsed_timestamp = datetime.strptime(timestamp_string, '%Y-%m-%d%I.%M.%S%p')
+    timestamp_24h = parsed_timestamp.strftime('%Y-%m-%d %H:%M:%S')
+    filename_safe_timestamp = timestamp_24h.replace(' ', '_').replace(':', '-')
+
+    # Extract the camera name from the text
+    camera_name = result[1][1][-2:]
+
+    return camera_name, filename_safe_timestamp.split('_')[0]
+
+
+def extract_frames(video_path, output_dir, frame_interval=1):
+    video_capture = cv2.VideoCapture(video_path)
+    
+    if not video_capture.isOpened():
+        print("Error: Could not open video.")
+        return
+    
+    fps = video_capture.get(cv2.CAP_PROP_FPS)
+    if fps == 0:
+        print("Error: Could not retrieve frame rate.")
+        return
+    
+    frame_number = 0
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+    
+    first_frame_processed = False
+    
+    while True:
+        ret, frame = video_capture.read()
+        if not ret:
+            break
+        
+        if frame_number % frame_interval == 0:
+            
+            ### Insert the new path/dir here ###
+            
+            if not first_frame_processed:
+                camera_name, date = extract_camera_name_and_date(frame)
+                print(f"Camera Name: {camera_name}, Date: {date}")
+                first_frame_processed = True
+                
+                frames_dir = Path(output_dir) / camera_name / date / "frames"
+                video_timelapse_dir = Path(output_dir) / camera_name / date / "video_timelapse"
+                
+                frames_dir.mkdir(parents=True, exist_ok=True)
+                video_timelapse_dir.mkdir(parents=True, exist_ok=True)
+            
+            frame_filename = f'{frames_dir}/frame_{frame_number // frame_interval:04d}.jpg'
+            cv2.imwrite(frame_filename, frame)
+            print(f'Frame {frame_number // frame_interval} saved as {frame_filename}')
+            
+        frame_number += 1
+    
+    video_capture.release()
+    print("All frames extracted.")
+    
+    return frames_dir, video_timelapse_dir, camera_name, date
+
+
+def generate_video_from_images(image_folder, video_name, codec='avc1', frame_rate=120):
+    # Convert image_folder to Path object
+    image_folder = Path(image_folder)
+    
+    # Fetch all images from the folder and sort them
+    images = sorted([img for img in image_folder.iterdir() if img.suffix == ".jpg"])
+
+    # Read the first image to get dimensions
+    frame = cv2.imread(str(images[0]))
+    height, width, layers = frame.shape
+
+    # Define the codec and create VideoWriter object
+    fourcc = cv2.VideoWriter_fourcc(*codec)
+    video = cv2.VideoWriter(video_name, fourcc, frame_rate, (width, height))
+
+    # Loop through all images and write them to the video
+    print(f"Creating video {video_name}...")
+    for image in images:
+        video.write(cv2.imread(str(image)))
+
+    # Release the video writer object
+    video.release()
+    cv2.destroyAllWindows()
