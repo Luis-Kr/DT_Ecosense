@@ -2,8 +2,8 @@ defaults:
   - _self_
   - paths: ../utils/paths
 
-raw_video_path: "/Users/luiskremer/Documents/PhD/Code/AngleCam/Data/VM_processing/Data/Video3.mp4"
+raw_video_path: "/mnt/geosense/cameras/F4E2C678D10D/08/21/video/F4E2C678D10D_1_0.mp4"
 
-dst_dir: data/export
+dst_dir: /mnt/geosense/cameras/F4E2C678D10D/08/21/frames
 
 set_size: 60
