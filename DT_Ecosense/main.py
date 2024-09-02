@@ -35,15 +35,20 @@ def main(cfg: DictConfig):
     # filenames = dp.extract_camera_metadata(output_dir=root_dir / cfg.dst_dir, image_paths=largest_files)
     
     logger.info("Extract frames...")
-    frames_dir, video_timelapse_dir, camera_name, date = dp.extract_frames(video_path=root_dir / cfg.raw_video_path, 
-                                                                            output_dir=root_dir / cfg.dst_dir, 
-                                                                            frame_interval=30)
+    # frames_dir, video_timelapse_dir, camera_name, date = dp.extract_frames(video_path=root_dir / cfg.raw_video_path, 
+    #                                                                         output_dir=root_dir / cfg.dst_dir, 
+    #                                                                         frame_interval=30)
+    
+    frames_dir = Path("/mnt/geosense/cameras/F4E2C678D10D/08/21/frames/27/2024-08-21/frames/frames_subsampled/") #Path("/mnt/geosense/cameras/F4E2C678D10D/08/21/frames/27/2024-08-21/frames")
+    video_timelapse_dir = Path("/mnt/geosense/cameras/F4E2C678D10D/08/21/frames/27/2024-08-21/video_timelapse")
+    camera_name = "27"
+    date = "2024-08-21"
     
     logger.info("Generate video...")
     dp.generate_video_from_images(image_folder=frames_dir, 
-                                  video_name=video_timelapse_dir / ("Camera_"+ camera_name + '_' + date + '_' + 'timelapse.mp4'), 
+                                  video_name = video_timelapse_dir / ('Camera_' + str(camera_name) + '_' + str(date) + '_timelapse.mp4'), 
                                   codec='avc1', 
-                                  frame_rate=120)
+                                  frame_rate=30)
     
     
 if __name__=='__main__':

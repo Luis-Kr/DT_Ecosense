@@ -1,0 +1,7 @@
+[2024-08-23 11:16:31,995][main][INFO] - Extract frames...
+[2024-08-23 11:16:32,138][easyocr.easyocr][WARNING] - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2024-08-23 11:16:32,139][easyocr.easyocr][WARNING] - Downloading detection model, please wait. This may take several minutes depending upon your network connection.
+[2024-08-23 11:17:11,920][easyocr.easyocr][INFO] - Download complete
+[2024-08-23 11:17:11,920][easyocr.easyocr][WARNING] - Downloading recognition model, please wait. This may take several minutes depending upon your network connection.
+[2024-08-23 11:17:17,905][easyocr.easyocr][INFO] - Download complete.
+[2024-08-23 11:28:11,966][main][INFO] - Generate video...
