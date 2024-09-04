@@ -1,0 +1,8 @@
+pylos:
+  remote_user: lk1167
+  remote_host: 10.9.7.14
+  remote_dir_base: /mnt/gsdata/projects/ecosense/AngleCam2_0/data/raw_videos
+
+NVR:
+  remote_user: root
+  remote_host: 10.6.159.52

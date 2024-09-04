@@ -1,0 +1,53 @@
+[2024-09-03 14:09:40,494][main][INFO] - Transfering data...
+[2024-09-03 14:09:40,495][main][INFO] - Extract frames...
+[2024-09-03 14:09:40,495][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_000_File_000_G5Bullet_07_F4E2C678CCA0_1_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_000_File_000_File_000_G5Bullet_07_F4E2C678CCA0_1_0.mp4
+[2024-09-03 14:09:40,496][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_001_File_001_G5Bullet_07_F4E2C678CCA0_2_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_001_File_001_File_001_G5Bullet_07_F4E2C678CCA0_2_0.mp4
+[2024-09-03 14:09:40,496][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_002_File_002_G5Bullet_07_F4E2C678CCA0_3_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_002_File_002_File_002_G5Bullet_07_F4E2C678CCA0_3_0.mp4
+[2024-09-03 14:09:40,496][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_003_File_003_G5Bullet_07_F4E2C678CCA0_4_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_003_File_003_File_003_G5Bullet_07_F4E2C678CCA0_4_0.mp4
+[2024-09-03 14:09:40,496][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_004_File_004_G5Bullet_07_F4E2C678CCA0_5_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_004_File_004_File_004_G5Bullet_07_F4E2C678CCA0_5_0.mp4
+[2024-09-03 14:09:40,496][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_005_File_005_G5Bullet_07_F4E2C678CCA0_6_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_005_File_005_File_005_G5Bullet_07_F4E2C678CCA0_6_0.mp4
+[2024-09-03 14:09:40,496][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_006_File_006_G5Bullet_07_F4E2C678CCA0_7_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_006_File_006_File_006_G5Bullet_07_F4E2C678CCA0_7_0.mp4
+[2024-09-03 14:09:40,496][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_007_File_007_G5Bullet_07_F4E2C678CCA0_8_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_007_File_007_File_007_G5Bullet_07_F4E2C678CCA0_8_0.mp4
+[2024-09-03 14:09:40,497][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_008_File_008_G5Bullet_07_F4E2C678CCA0_9_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_008_File_008_File_008_G5Bullet_07_F4E2C678CCA0_9_0.mp4
+[2024-09-03 14:09:40,497][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_009_File_009_G5Bullet_07_F4E2C678CCA0_10_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_009_File_009_File_009_G5Bullet_07_F4E2C678CCA0_10_0.mp4
+[2024-09-03 14:09:40,497][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_010_File_010_G5Bullet_07_F4E2C678CCA0_11_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_010_File_010_File_010_G5Bullet_07_F4E2C678CCA0_11_0.mp4
+[2024-09-03 14:09:40,497][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_011_File_011_G5Bullet_07_F4E2C678CCA0_12_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_011_File_011_File_011_G5Bullet_07_F4E2C678CCA0_12_0.mp4
+[2024-09-03 14:09:40,497][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_012_File_012_G5Bullet_07_F4E2C678CCA0_13_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_012_File_012_File_012_G5Bullet_07_F4E2C678CCA0_13_0.mp4
+[2024-09-03 14:09:40,497][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_013_File_013_G5Bullet_07_F4E2C678CCA0_14_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_013_File_013_File_013_G5Bullet_07_F4E2C678CCA0_14_0.mp4
+[2024-09-03 14:09:40,498][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_014_File_014_G5Bullet_07_F4E2C678CCA0_15_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_014_File_014_File_014_G5Bullet_07_F4E2C678CCA0_15_0.mp4
+[2024-09-03 14:09:40,498][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_015_File_015_G5Bullet_07_F4E2C678CCA0_16_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_015_File_015_File_015_G5Bullet_07_F4E2C678CCA0_16_0.mp4
+[2024-09-03 14:09:40,498][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_016_File_016_G5Bullet_07_F4E2C678CCA0_17_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_016_File_016_File_016_G5Bullet_07_F4E2C678CCA0_17_0.mp4
+[2024-09-03 14:09:40,498][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_017_File_017_G5Bullet_07_F4E2C678CCA0_18_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_017_File_017_File_017_G5Bullet_07_F4E2C678CCA0_18_0.mp4
+[2024-09-03 14:09:40,498][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_018_File_018_G5Bullet_07_F4E2C678CCA0_19_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_018_File_018_File_018_G5Bullet_07_F4E2C678CCA0_19_0.mp4
+[2024-09-03 14:09:40,498][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_019_File_019_G5Bullet_07_F4E2C678CCA0_20_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_019_File_019_File_019_G5Bullet_07_F4E2C678CCA0_20_0.mp4
+[2024-09-03 14:09:40,498][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_020_File_020_G5Bullet_07_F4E2C678CCA0_21_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_020_File_020_File_020_G5Bullet_07_F4E2C678CCA0_21_0.mp4
+[2024-09-03 14:09:40,498][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_021_File_021_G5Bullet_07_F4E2C678CCA0_22_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_021_File_021_File_021_G5Bullet_07_F4E2C678CCA0_22_0.mp4
+[2024-09-03 14:09:40,499][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_022_File_022_G5Bullet_07_F4E2C678CCA0_23_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_022_File_022_File_022_G5Bullet_07_F4E2C678CCA0_23_0.mp4
+[2024-09-03 14:09:40,499][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_023_File_023_G5Bullet_07_F4E2C678CCA0_24_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_023_File_023_File_023_G5Bullet_07_F4E2C678CCA0_24_0.mp4
+[2024-09-03 14:09:40,499][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_024_File_024_G5Bullet_07_F4E2C678CCA0_25_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_024_File_024_File_024_G5Bullet_07_F4E2C678CCA0_25_0.mp4
+[2024-09-03 14:09:40,499][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_025_File_025_G5Bullet_07_F4E2C678CCA0_26_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_025_File_025_File_025_G5Bullet_07_F4E2C678CCA0_26_0.mp4
+[2024-09-03 14:09:40,499][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_026_File_026_G5Bullet_07_F4E2C678CCA0_27_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_026_File_026_File_026_G5Bullet_07_F4E2C678CCA0_27_0.mp4
+[2024-09-03 14:09:40,499][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_027_File_027_G5Bullet_07_F4E2C678CCA0_28_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_027_File_027_File_027_G5Bullet_07_F4E2C678CCA0_28_0.mp4
+[2024-09-03 14:09:40,499][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_028_File_028_G5Bullet_07_F4E2C678CCA0_29_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_028_File_028_File_028_G5Bullet_07_F4E2C678CCA0_29_0.mp4
+[2024-09-03 14:09:40,499][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_029_File_029_G5Bullet_07_F4E2C678CCA0_30_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_029_File_029_File_029_G5Bullet_07_F4E2C678CCA0_30_0.mp4
+[2024-09-03 14:09:40,500][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_030_File_030_G5Bullet_07_F4E2C678CCA0_31_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_030_File_030_File_030_G5Bullet_07_F4E2C678CCA0_31_0.mp4
+[2024-09-03 14:09:40,500][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_031_File_031_G5Bullet_07_F4E2C678CCA0_32_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_031_File_031_File_031_G5Bullet_07_F4E2C678CCA0_32_0.mp4
+[2024-09-03 14:09:40,500][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_032_File_032_G5Bullet_07_F4E2C678CCA0_33_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_032_File_032_File_032_G5Bullet_07_F4E2C678CCA0_33_0.mp4
+[2024-09-03 14:09:40,500][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_033_File_033_G5Bullet_07_F4E2C678CCA0_34_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_033_File_033_File_033_G5Bullet_07_F4E2C678CCA0_34_0.mp4
+[2024-09-03 14:09:40,500][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_034_File_034_G5Bullet_07_F4E2C678CCA0_35_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_034_File_034_File_034_G5Bullet_07_F4E2C678CCA0_35_0.mp4
+[2024-09-03 14:09:40,501][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_035_File_035_G5Bullet_07_F4E2C678CCA0_36_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_035_File_035_File_035_G5Bullet_07_F4E2C678CCA0_36_0.mp4
+[2024-09-03 14:09:40,501][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_036_File_036_G5Bullet_07_F4E2C678CCA0_37_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_036_File_036_File_036_G5Bullet_07_F4E2C678CCA0_37_0.mp4
+[2024-09-03 14:09:40,501][main][INFO] - Renamed /mnt/geosense/cameras/G5Bullet_07/mp4/File_037_File_037_G5Bullet_07_F4E2C678CCA0_38_0.mp4 to /mnt/geosense/cameras/G5Bullet_07/mp4/File_037_File_037_File_037_G5Bullet_07_F4E2C678CCA0_38_0.mp4
+[2024-09-03 14:09:40,501][main][INFO] - Processing file /mnt/geosense/cameras/G5Bullet_07/mp4/File_000_File_000_File_000_G5Bullet_07_F4E2C678CCA0_1_0.mp4...
+[2024-09-03 14:11:29,130][main][INFO] - All frames extracted.
+[2024-09-03 14:11:29,131][main][INFO] - Total frames extracted: 1630
+[2024-09-03 14:11:29,131][main][INFO] - Processing file /mnt/geosense/cameras/G5Bullet_07/mp4/File_001_File_001_File_001_G5Bullet_07_F4E2C678CCA0_2_0.mp4...
+[2024-09-03 14:12:48,468][main][INFO] - All frames extracted.
+[2024-09-03 14:12:48,469][main][INFO] - Total frames extracted: 3141
+[2024-09-03 14:12:48,470][main][INFO] - Processing file /mnt/geosense/cameras/G5Bullet_07/mp4/File_002_File_002_File_002_G5Bullet_07_F4E2C678CCA0_3_0.mp4...
+[2024-09-03 14:14:12,740][main][INFO] - All frames extracted.
+[2024-09-03 14:14:12,741][main][INFO] - Total frames extracted: 4777
+[2024-09-03 14:14:12,741][main][INFO] - Processing file /mnt/geosense/cameras/G5Bullet_07/mp4/File_003_File_003_File_003_G5Bullet_07_F4E2C678CCA0_4_0.mp4...
+[2024-09-03 14:15:40,613][main][INFO] - All frames extracted.
+[2024-09-03 14:15:40,614][main][INFO] - Total frames extracted: 6453
+[2024-09-03 14:15:40,614][main][INFO] - Processing file /mnt/geosense/cameras/G5Bullet_07/mp4/File_004_File_004_File_004_G5Bullet_07_F4E2C678CCA0_5_0.mp4...
