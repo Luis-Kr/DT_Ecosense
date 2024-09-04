@@ -1,0 +1,34 @@
+[2024-09-03 17:21:19,596][main][INFO] - Transfering data...
+[2024-09-03 17:21:19,596][main][INFO] - Extract frames...
+[2024-09-03 17:21:19,597][main][INFO] - Processing file /mnt/geosense/cameras/G5Bullet_07/mp4/File_000_File_000_File_000_G5Bullet_07_F4E2C678CCA0_1_0.mp4...
+[2024-09-03 17:21:19,597][main][INFO] - Grouping files in sets...
+[2024-09-03 17:21:19,599][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000006.jpg
+[2024-09-03 17:21:19,600][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000008.jpg
+[2024-09-03 17:21:19,600][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000015.jpg
+[2024-09-03 17:21:19,601][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000022.jpg
+[2024-09-03 17:21:19,601][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000030.jpg
+[2024-09-03 17:21:19,602][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000032.jpg
+[2024-09-03 17:21:19,602][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000042.jpg
+[2024-09-03 17:21:19,603][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000043.jpg
+[2024-09-03 17:21:19,604][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000055.jpg
+[2024-09-03 17:21:19,604][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000060.jpg
+[2024-09-03 17:21:19,605][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000068.jpg
+[2024-09-03 17:21:19,605][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000070.jpg
+[2024-09-03 17:21:19,606][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000524.jpg
+[2024-09-03 17:21:19,607][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_000564.jpg
+[2024-09-03 17:21:19,607][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_001215.jpg
+[2024-09-03 17:21:19,607][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_001266.jpg
+[2024-09-03 17:21:19,608][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_001646.jpg
+[2024-09-03 17:21:19,609][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_001978.jpg
+[2024-09-03 17:21:19,609][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_002562.jpg
+[2024-09-03 17:21:19,610][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_002713.jpg
+[2024-09-03 17:21:19,611][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_002918.jpg
+[2024-09-03 17:21:19,611][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_003534.jpg
+[2024-09-03 17:21:19,613][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_003998.jpg
+[2024-09-03 17:21:19,614][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_004346.jpg
+[2024-09-03 17:21:19,616][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_004736.jpg
+[2024-09-03 17:21:19,617][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_004763.jpg
+[2024-09-03 17:21:19,618][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_005622.jpg
+[2024-09-03 17:21:19,620][main][INFO] - Removed /mnt/geosense/cameras/G5Bullet_07/frames2/hq_frames/frame_005969.jpg
+[2024-09-03 17:21:19,620][main][INFO] - Generate video...
+[2024-09-03 17:21:19,620][main][INFO] - Exporting video to /mnt/geosense/cameras/G5Bullet_07/video_timelapse_export/G5Bullet_07_2024-09-03_fr30.mp4...

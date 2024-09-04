@@ -3,6 +3,12 @@ import numpy as np
 import easyocr
 from datetime import datetime
 from pathlib import Path
+import subprocess
+import dask
+from dask import delayed
+from dask.diagnostics import ProgressBar
+import dask.bag as db
+import h5py
 
 # Custom imports
 import utils.logger as lgr
@@ -110,53 +116,34 @@ def extract_camera_name_and_date(frame):
     return camera_name, filename_safe_timestamp.split('_')[0]
 
 
-def extract_frames(video_path, output_dir, frame_interval=1):
+def extract_frames(logger, video_path, output_dir, frame_interval=1, frame_number=0):
     video_capture = cv2.VideoCapture(video_path)
     
     if not video_capture.isOpened():
-        print("Error: Could not open video.")
+        logger.info("Error: Could not open video.")
         return
     
     fps = video_capture.get(cv2.CAP_PROP_FPS)
     if fps == 0:
-        print("Error: Could not retrieve frame rate.")
+        logger.info("Error: Could not retrieve frame rate.")
         return
     
-    frame_number = 0
-    Path(output_dir).mkdir(parents=True, exist_ok=True)
-    
-    first_frame_processed = False
-    
     while True:
+        frame_number += 1
         ret, frame = video_capture.read()
         if not ret:
             break
         
         if frame_number % frame_interval == 0:
             
-            ### Insert the new path/dir here ###
-            
-            if not first_frame_processed:
-                camera_name, date = extract_camera_name_and_date(frame)
-                print(f"Camera Name: {camera_name}, Date: {date}")
-                first_frame_processed = True
-                
-                frames_dir = Path(output_dir) / camera_name / date / "frames"
-                video_timelapse_dir = Path(output_dir) / camera_name / date / "video_timelapse"
-                
-                frames_dir.mkdir(parents=True, exist_ok=True)
-                video_timelapse_dir.mkdir(parents=True, exist_ok=True)
-            
-            frame_filename = f'{frames_dir}/frame_{frame_number // frame_interval:04d}.jpg'
+            frame_filename = f'{output_dir}/frame_{frame_number // frame_interval:06d}.jpg'
             cv2.imwrite(frame_filename, frame)
-            print(f'Frame {frame_number // frame_interval} saved as {frame_filename}')
-            
-        frame_number += 1
     
     video_capture.release()
-    print("All frames extracted.")
+    logger.info("All frames extracted.")
+    logger.info(f"Total frames extracted: {frame_number // frame_interval}")
     
-    return frames_dir, video_timelapse_dir, camera_name, date
+    return frame_number
 
 
 def generate_video_from_images(image_folder, video_name, codec='avc1', frame_rate=120):
@@ -182,3 +169,155 @@ def generate_video_from_images(image_folder, video_name, codec='avc1', frame_rat
     # Release the video writer object
     video.release()
     cv2.destroyAllWindows()
+    
+
+
+# def read_image(image_path):
+#     return cv2.imread(str(image_path))
+
+# def generate_video_from_images_dask(image_folder, video_name, codec='avc1', frame_rate=120):
+#     # Convert image_folder to Path object
+#     image_folder = Path(image_folder)
+    
+#     # Fetch all images from the folder and sort them
+#     images = sorted([img for img in image_folder.iterdir() if img.suffix == ".jpg"])
+
+#     # Read the first image to get dimensions
+#     frame = cv2.imread(str(images[0]))
+#     height, width, layers = frame.shape
+
+#     # Define the codec and create VideoWriter object
+#     fourcc = cv2.VideoWriter_fourcc(*codec)
+#     video = cv2.VideoWriter(video_name, fourcc, frame_rate, (width, height))
+
+#     # Use Dask to parallelize the image reading process
+#     print(f"Creating video {video_name}...")
+#     tasks = [delayed(read_image)(image) for image in images]
+    
+#     with ProgressBar():
+#         frames = dask.compute(*tasks)
+
+#     # Write the frames to the video sequentially
+#     for frame in frames:
+#         video.write(frame)
+
+#     # Release the video writer object
+#     video.release()
+#     cv2.destroyAllWindows()
+    
+    
+
+# def generate_video_from_images_dask(image_folder, video_name, codec='avc1', frame_rate=120):
+#     # Convert image_folder to Path object
+#     image_folder = Path(image_folder)
+    
+#     # Fetch all images from the folder and sort them
+#     images = sorted([img for img in image_folder.iterdir() if img.suffix == ".jpg"])
+
+#     # Read the first image to get dimensions
+#     frame = cv2.imread(str(images[0]))
+#     height, width, layers = frame.shape
+
+#     # Define the codec and create VideoWriter object
+#     fourcc = cv2.VideoWriter_fourcc(*codec)
+#     video = cv2.VideoWriter(video_name, fourcc, frame_rate, (width, height))
+
+#     # Use a generator to process images one by one
+#     print(f"Creating video {video_name}...")
+    
+#     def image_generator(images):
+#         for image in images:
+#             yield read_image(image)
+    
+#     with ProgressBar():
+#         for frame in image_generator(images):
+#             video.write(frame)
+
+#     # Release the video writer object
+#     video.release()
+#     cv2.destroyAllWindows()
+    
+
+
+# def save_images_as_numpy(image_folder, output_folder):
+#     # Convert image_folder and output_folder to Path objects
+#     image_folder = Path(image_folder)
+#     output_folder = Path(output_folder)
+#     output_folder.mkdir(parents=True, exist_ok=True)
+    
+#     # Fetch all images from the folder and sort them
+#     images = sorted([img for img in image_folder.iterdir() if img.suffix == ".jpg"])
+
+#     # Loop through all images and save them as compressed numpy arrays
+#     print(f"Saving images from {image_folder} to {output_folder} as compressed numpy arrays...")
+#     for idx, image in enumerate(images):
+#         img_array = cv2.imread(str(image))
+#         output_file = output_folder / f"image_{idx:03d}.npz"
+#         np.savez_compressed(output_file, img_array)
+#         print(f"Saved {output_file}")
+        
+
+# def save_images_as_numpy_and_hdf5(image_folder, output_folder):
+#     # Convert image_folder and output_folder to Path objects
+#     image_folder = Path(image_folder)
+#     output_folder = Path(output_folder)
+#     output_folder.mkdir(parents=True, exist_ok=True)
+    
+#     # Fetch all images from the folder and sort them
+#     images = sorted([img for img in image_folder.iterdir() if img.suffix == ".jpg"])
+
+#     # Loop through all images and save them as compressed numpy arrays and HDF5 files
+#     print(f"Saving images from {image_folder} to {output_folder} as compressed numpy arrays and HDF5 files...")
+#     for idx, image in enumerate(images):
+#         img_array = cv2.imread(str(image), cv2.IMREAD_UNCHANGED)
+        
+#         # Save as compressed numpy array
+#         npz_output_file = output_folder / f"image_{idx:03d}.npy"
+#         np.save(npz_output_file, img_array)
+#         print(f"Saved {npz_output_file}")
+        
+#         # Save as HDF5 file
+#         hdf5_output_file = output_folder / f"image_{idx:03d}.h5"
+#         with h5py.File(hdf5_output_file, 'w') as hdf5_file:
+#             hdf5_file.create_dataset('image', data=img_array, compression='gzip')
+#         print(f"Saved {hdf5_output_file}")
+    
+
+
+def transfer_data_remote_local(remote_user, remote_host, remote_dir, local_dir):
+    # Construct the rsync command
+    rsync_command = [
+        'rsync',
+        '-avz',  # Options: archive mode, verbose, compress file data during the transfer
+        '--progress',
+        '-e', 'ssh',  # Use SSH for the transfer
+        f'{remote_user}@{remote_host}:{remote_dir}',
+        local_dir
+    ]
+
+    # Execute the rsync command
+    try:
+        subprocess.run(rsync_command, check=True)
+        print(f"Data transferred successfully from {remote_user}@{remote_host}:{remote_dir} to {local_dir}")
+    except subprocess.CalledProcessError as e:
+        print(f"An error occurred while transferring data: {e}")
+
+   
+def transfer_data_local_remote(remote_user, remote_host, remote_dir, local_dir):
+    # Construct the rsync command
+    rsync_command = [
+        'rsync',
+        '-avz',  # Options: archive mode, verbose, compress file data during the transfer
+        '--progress',
+        '-e', 'ssh',  # Use SSH for the transfer
+        local_dir,
+        f'{remote_user}@{remote_host}:{remote_dir}',
+    ]
+
+    # Execute the rsync command
+    try:
+        subprocess.run(rsync_command, check=True)
+        print(f"Data transferred successfully from {local_dir} to {remote_user}@{remote_host}:{remote_dir}")
+    except subprocess.CalledProcessError as e:
+        print(f"An error occurred while transferring data: {e}")
+
