@@ -1,3 +1,0 @@
-logger: 
-  dst_dir: logs/
-  dst_dir_NVR: logs/NVR/
