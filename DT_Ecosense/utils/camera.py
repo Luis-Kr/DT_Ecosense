@@ -2,6 +2,12 @@ from pathlib import Path
 from omegaconf import DictConfig
 import logging
 from typing import List, Tuple
+import shutil
+
+import os
+import sys
+
+import data_preprocessing as dp
 
 def get_cameras(cfg: DictConfig) -> list:
     """Retrieve the list of cameras from the configuration."""
@@ -29,12 +35,8 @@ def rename_mp4_files(logger: logging.Logger, local_dir_mp4: Path) -> None:
     
     for idx, mp4_file in enumerate(mp4_files):
         new_name = mp4_file.parent / f'File_{idx:03d}_{mp4_file.name}'
-        
-        if not new_name.exists():
-            mp4_file.rename(new_name)
-            logger.info(f"Renamed {mp4_file} to {new_name}")
-        else:
-            logger.warning(f"File {new_name} already exists. Skipping rename.")
+        mp4_file.rename(new_name)
+        logger.info(f"Renamed {mp4_file} to {new_name}")
             
 
 def group_and_move_files(logger: logging.Logger, local_dir_frames: Path, hq_frames_dir: Path, set_size: int, interval: int) -> None:

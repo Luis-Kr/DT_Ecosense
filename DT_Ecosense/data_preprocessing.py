@@ -9,6 +9,7 @@ from dask import delayed
 from dask.diagnostics import ProgressBar
 import dask.bag as db
 import h5py
+import time
 
 # Custom imports
 import utils.logger as lgr
@@ -116,7 +117,7 @@ def extract_camera_name_and_date(frame):
     return camera_name, filename_safe_timestamp.split('_')[0]
 
 
-def extract_frames(logger, video_path, output_dir, frame_interval=1, frame_number=0):
+def extract_frames(logger, video_path, output_dir, frame_number=0):
     video_capture = cv2.VideoCapture(video_path)
     
     if not video_capture.isOpened():
@@ -128,20 +129,55 @@ def extract_frames(logger, video_path, output_dir, frame_interval=1, frame_numbe
         logger.info("Error: Could not retrieve frame rate.")
         return
     
+    logger.info(f"Frame rate: {fps}")
+    logger.info(f"Extracting frames from video '{video_path}'...")
+    
+    # Calculate the frame number corresponding to 3min intervals
+    frames_per_interval = int(fps * 120)
+    frame_number_internal = 0
+    
+    # Record the start time
+    start_time = time.time()
+    
     while True:
-        frame_number += 1
-        ret, frame = video_capture.read()
-        if not ret:
+        # Check if the elapsed time exceeds 5 minutes (300 seconds)
+        elapsed_time = time.time() - start_time
+        if elapsed_time > 600:
+            logger.info("Break: Processing time exceeds 10 minutes.")
             break
         
-        if frame_number % frame_interval == 0:
-            
-            frame_filename = f'{output_dir}/frame_{frame_number // frame_interval:06d}.jpg'
+        # Get the total number of frames in the video
+        total_frames = video_capture.get(cv2.CAP_PROP_FRAME_COUNT)
+        
+        # Check if frame_number_internal exceeds the total number of frames
+        if frame_number_internal >= total_frames:
+            logger.info("Break: frame_number_internal exceeds total number of frames.")
+            break
+        
+        # Set the video capture position to the next frame of interest
+        video_capture.set(cv2.CAP_PROP_POS_FRAMES, frame_number_internal)
+        
+        ret, frame = video_capture.read()
+        if not ret:
+            logger.info("Break: Could not read frame or video is fully processed.")
+            break
+        
+        # Save one frame per interval
+        if frame_number_internal % frames_per_interval == 0:
+            frame_filename = f'{output_dir}/frame_{frame_number + frame_number_internal // frames_per_interval:06d}.jpg'
             cv2.imwrite(frame_filename, frame)
+            logger.info(f"Extracting frame {frame_number + frame_number_internal // frames_per_interval}...")
+        
+        # Increment frame_number_internal by frames_per_interval to skip frames
+        frame_number_internal += frames_per_interval
+        logger.info(f"Frame number internal: {frame_number_internal}")
     
     video_capture.release()
     logger.info("All frames extracted.")
-    logger.info(f"Total frames extracted: {frame_number // frame_interval}")
+    logger.info(f"Frame number: {frame_number}")
+    
+    # Update the global frame_number to reflect the total frames processed
+    frame_number += frame_number_internal // frames_per_interval
     
     return frame_number
 
@@ -162,7 +198,6 @@ def generate_video_from_images(image_folder, video_name, codec='avc1', frame_rat
     video = cv2.VideoWriter(video_name, fourcc, frame_rate, (width, height))
 
     # Loop through all images and write them to the video
-    print(f"Creating video {video_name}...")
     for image in images:
         video.write(cv2.imread(str(image)))
 
