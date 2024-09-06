@@ -1,0 +1,13 @@
+[2024-09-04 14:13:52,558][main][INFO] - --------------------------------------------------
+[2024-09-04 14:13:52,559][main][INFO] - --------------------------------------------------
+[2024-09-04 14:13:52,559][main][INFO] - Processing camera G5Bullet_07 with MAC address F4E2C678CCA0
+[2024-09-04 14:13:52,560][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:13:52,560][main][INFO] - Destination directory: /volume1/videos/G5Bullet_07
+[2024-09-04 14:13:52,561][main][INFO] - --------------------------------------------------
+[2024-09-04 14:13:52,561][main][INFO] - --------------------------------------------------
+[2024-09-04 14:13:52,590][main][INFO] - -----------------------------------
+[2024-09-04 14:13:52,591][main][INFO] - Processing camera G5Bullet_07 with MAC address F4E2C678CCA0
+[2024-09-04 14:13:52,592][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:13:52,593][main][INFO] - Destination directory: /volume1/videos/G5Bullet_07
+[2024-09-04 14:13:52,593][main][INFO] - -----------------------------------
+[2024-09-04 14:14:09,177][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678CCA0_0_rotating_1725382103919.ubv to /volume1/videos/G5Bullet_07/G5Bullet_07_F4E2C678CCA0_1

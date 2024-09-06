@@ -1,0 +1,56 @@
+[2024-09-04 14:24:50,634][main][INFO] - --------------------------------------------------
+[2024-09-04 14:24:50,635][main][INFO] - --------------------------------------------------
+[2024-09-04 14:24:50,636][main][INFO] - ::: Processing camera G5Bullet_26 with MAC address F4E2C678D12A :::
+[2024-09-04 14:24:50,636][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:24:50,636][main][INFO] - Destination directory: /volume1/videos/G5Bullet_26
+[2024-09-04 14:24:50,637][main][INFO] - --------------------------------------------------
+[2024-09-04 14:24:50,637][main][INFO] - --------------------------------------------------
+[2024-09-04 14:25:05,218][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725342491425.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_1
+[2024-09-04 14:25:22,467][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725400109150.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_2
+[2024-09-04 14:25:39,584][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725340911475.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_3
+[2024-09-04 14:25:53,546][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725329074843.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_4
+[2024-09-04 14:26:11,385][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725388350549.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_5
+[2024-09-04 14:26:28,601][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725365567383.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_6
+[2024-09-04 14:26:43,282][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725363948797.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_7
+[2024-09-04 14:27:01,083][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725384314350.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_8
+[2024-09-04 14:27:20,391][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725390366099.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_9
+[2024-09-04 14:27:41,135][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725321552289.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_10
+[2024-09-04 14:27:57,382][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725360643327.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_11
+[2024-09-04 14:28:14,107][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725397008185.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_12
+[2024-09-04 14:28:32,409][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725367062815.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_13
+[2024-09-04 14:28:47,129][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725348794506.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_14
+[2024-09-04 14:29:03,434][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725337372532.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_15
+[2024-09-04 14:29:20,989][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725325148505.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_16
+[2024-09-04 14:29:36,373][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725368700309.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_17
+[2024-09-04 14:29:50,741][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725373900310.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_18
+[2024-09-04 14:30:08,762][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725376076712.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_19
+[2024-09-04 14:30:25,869][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725347163715.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_20
+[2024-09-04 14:30:40,547][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725356973993.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_21
+[2024-09-04 14:30:55,764][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725344082971.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_22
+[2024-09-04 14:31:11,571][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725335226886.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_23
+[2024-09-04 14:31:23,886][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725358782230.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_24
+[2024-09-04 14:31:38,697][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725370257556.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_25
+[2024-09-04 14:31:55,178][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725362296043.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_26
+[2024-09-04 14:32:12,640][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725317360949.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_27
+[2024-09-04 14:32:28,047][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725352697806.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_28
+[2024-09-04 14:32:43,001][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725372074722.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_29
+[2024-09-04 14:32:57,290][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725350565381.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_30
+[2024-09-04 14:33:10,424][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725354848925.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_31
+[2024-09-04 14:33:25,893][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725382473920.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_32
+[2024-09-04 14:33:39,763][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725386084631.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_33
+[2024-09-04 14:33:53,026][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725380512358.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_34
+[2024-09-04 14:34:07,759][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725332083855.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_35
+[2024-09-04 14:34:21,732][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725378412544.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_36
+[2024-09-04 14:34:36,080][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725394847621.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_37
+[2024-09-04 14:34:50,785][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725345623607.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_38
+[2024-09-04 14:35:03,717][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725339223304.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_39
+[2024-09-04 14:35:20,169][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725392741991.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_40
+[2024-09-04 14:35:20,171][main][INFO] - --------------------------------------------------
+[2024-09-04 14:35:20,172][main][INFO] - --------------------------------------------------
+[2024-09-04 14:35:20,172][main][INFO] - ::: Processing camera G5Bullet_27 with MAC address F4E2C678D10D :::
+[2024-09-04 14:35:20,172][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:35:20,173][main][INFO] - Destination directory: /volume1/videos/G5Bullet_27
+[2024-09-04 14:35:20,173][main][INFO] - --------------------------------------------------
+[2024-09-04 14:35:20,173][main][INFO] - --------------------------------------------------
+[2024-09-04 14:35:35,662][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D10D_0_rotating_1725332301123.ubv to /volume1/videos/G5Bullet_27/G5Bullet_27_F4E2C678D10D_2024-09-03_1
+[2024-09-04 14:35:49,461][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D10D_0_rotating_1725335931186.ubv to /volume1/videos/G5Bullet_27/G5Bullet_27_F4E2C678D10D_2024-09-03_2
