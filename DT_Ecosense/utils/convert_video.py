@@ -16,13 +16,13 @@ def convert_single_camera(args):
     
     search_pattern = f"{cam_mac_address}_0_rotating*.ubv"
     src_dir = Path(cfg.NVR.src_dir) / str(year) / f"{month:02}" / f"{day:02}"
-    dst_dir = Path(cfg.NVR.dst_dir) / camera_name
+    dst_dir = Path(cfg.NVR.dst_dir) / f"{year}-{month:02}-{day:02}" / camera_name
     
-    logger.info("-----------------------------------")
-    logger.info(f"Processing camera {camera_name} with MAC address {cam_mac_address}")
+    lgr.log_separator(logger)
+    logger.info(f"::: Processing camera {camera_name} with MAC address {cam_mac_address} :::")
     logger.info(f"Source directory: {src_dir}")
     logger.info(f"Destination directory: {dst_dir}")
-    logger.info("-----------------------------------")
+    lgr.log_separator(logger)
     
     # Initialize the prefix counter
     prefix_counter = 1
@@ -31,10 +31,10 @@ def convert_single_camera(args):
         dst_dir.mkdir(parents=True)
 
     # Loop through each matching file in the source directory
-    for file in Path(src_dir).glob(search_pattern):
+    for file in sorted(Path(src_dir).glob(search_pattern)):
         
         # Define the destination directory with the incrementing prefix
-        current_dst_dir = dst_dir / f"{camera_name}_{cam_mac_address}_{prefix_counter}"
+        current_dst_dir = dst_dir / f"{camera_name}_{cam_mac_address}_{year}-{month:02d}-{day:02d}_{prefix_counter}"
 
         # Run the command for each file
         subprocess.run([

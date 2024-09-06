@@ -1,0 +1,8 @@
+[2024-09-04 14:36:25,754][main][INFO] - --------------------------------------------------
+[2024-09-04 14:36:25,782][main][INFO] - --------------------------------------------------
+[2024-09-04 14:36:25,783][main][INFO] - ::: Processing camera G5Bullet_26 with MAC address F4E2C678D12A :::
+[2024-09-04 14:36:25,785][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:36:25,786][main][INFO] - Destination directory: /volume1/videos/G5Bullet_26
+[2024-09-04 14:36:25,787][main][INFO] - --------------------------------------------------
+[2024-09-04 14:36:25,788][main][INFO] - --------------------------------------------------
+[2024-09-04 14:36:44,173][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678D12A_0_rotating_1725317360949.ubv to /volume1/videos/G5Bullet_26/G5Bullet_26_F4E2C678D12A_2024-09-03_1
