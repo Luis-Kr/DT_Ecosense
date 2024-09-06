@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 import warnings
 from typing import Tuple, List, Dict
@@ -19,11 +19,17 @@ warnings.filterwarnings("ignore")
 # get the path of the current file
 root_dir = Path(__file__).parent.parent.absolute()
 
+def get_date_yesterday() -> Tuple[int, int, int]:
+    """Get the date of yesterday."""
+    #yesterday = datetime.now() - timedelta(days=4)
+    yesterday = datetime(2024, 8, 31)
+    return yesterday.year, yesterday.month, yesterday.day
+
 
 def get_camera_paths(cfg: DictConfig, cam: Tuple[str, str], year: int, month: int, day: int) -> Tuple[Path, Path, str, str]:
     camera_name, cam_mac_address = cam
     src_dir = Path(cfg.NVR.src_dir) / str(year) / f"{month:02}" / f"{day:02}"
-    dst_dir = Path(cfg.NVR.dst_dir) / camera_name
+    dst_dir = Path(cfg.NVR.dst_dir) / f"{year}-{month:02}-{day:02}" / camera_name
     
     # Create the destination directory if it does not exist
     if not dst_dir.exists():
@@ -41,35 +47,20 @@ def main(cfg: DictConfig):
     cams = list(cfg.cams.items())
     
     # Get the date of today
-    year = datetime.now().year
-    month = datetime.now().month
-    day = datetime.now().day
+    year, month, day = get_date_yesterday()
     
     # Set up the logger
     logger = lgr.logger_setup('main', root_dir / cfg.paths.logger.dst_dir_NVR / f"NVR_{year}_{month:02}_{day:02}.log")
     
-    cvv.convert_videos(cfg=cfg, logger=logger, year=year, month=month, day=day, cameras=cams)
-    
-    
-    # for i in range(len(cams)):
-    #     # Get the source and destination directories
-    #     src_dir, dst_dir, camera_name, cam_mac_address = get_camera_paths(cfg, cams[i], year, month, day)
-        
-    #     logger.info("-----------------------------------")
-    #     logger.info(f"Processing camera {camera_name} with MAC address {cam_mac_address}")
-    #     logger.info(f"Source directory: {src_dir}")
-    #     logger.info(f"Destination directory: {dst_dir}")
-    #     logger.info("-----------------------------------")
-        
-    #     # print(f"Processing camera {camera_name} with MAC address {cam_mac_address}")
-    #     # print(f"Source directory: {src_dir}")
-    #     # print(f"Destination directory: {dst_dir}")
-        
-    #     cvv.convert_videos(logger=logger,
-    #                        src_dir=src_dir, 
-    #                        dest_dir=dst_dir, 
-    #                        camera_name=camera_name, 
-    #                        cam_mac_address=cam_mac_address)
+    try:
+        cvv.convert_videos(cfg=cfg, 
+                            logger=logger, 
+                            year=year, 
+                            month=month, 
+                            day=day, 
+                            cameras=cams)
+    except Exception as e:
+        logger.error(f"Failed to process camera {camera_name} with MAC address {cam_mac_address}: {e}")
         
 
 if __name__=='__main__':
