@@ -14,9 +14,9 @@ def get_cameras(cfg: DictConfig) -> list:
     return list(cfg.cams.items())
 
 
-def setup_camera_directories(cfg: DictConfig, cams: List[Tuple[str, str]], i: int) -> Tuple[Path, Path]:
+def setup_camera_directories(cfg: DictConfig, cams: List[Tuple[str, str]], i: int, date_str: str) -> Tuple[Path, Path]:
     camera_name, cam_mac_address = cams[i]
-    remote_dir = Path(cfg.remote_dir) / camera_name / '*0.mp4'
+    remote_dir = Path(cfg.remote_dir) / date_str / camera_name / '*0.mp4'
     local_dir_mp4 = Path(cfg.dst_dir) / camera_name / 'mp4'
     local_dir_frames = Path(cfg.dst_dir) / camera_name / 'frames'
     output_video = Path(cfg.dst_dir) / camera_name / 'video_timelapse_export'

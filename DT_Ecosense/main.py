@@ -31,7 +31,8 @@ root_dir = Path(__file__).parent.parent.absolute()
 
 def get_date_yesterday() -> Tuple[int, int, int]:
     """Get the date of yesterday."""
-    yesterday = datetime.now() - timedelta(days=2)
+    #yesterday = datetime.now() - timedelta(days=5)
+    yesterday = datetime(2024, 8, 31)
     return yesterday.year, yesterday.month, yesterday.day
 
 
@@ -41,14 +42,16 @@ def main(cfg: DictConfig) -> None:
     # Clear the hydra config cache
     lgr.clear_hydra_cache()
     
-    date_yesterday = (datetime.now() - timedelta(days=2)).strftime("%Y-%m-%d")
+    #date_yesterday = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
+    date_yesterday = datetime(2024, 8, 31).strftime("%Y-%m-%d")
     logger = lgr.setup_logger(cfg, date_yesterday)
     cams = cma.get_cameras(cfg)
     year, month, day = get_date_yesterday()
     
     for i in range(len(cams)):
-        # Set up the camera directories    
-        remote_dir, local_dir_mp4, local_dir_frames, output_video, camera_name = cma.setup_camera_directories(cfg, cams, i)
+        # Set up the camera directories
+        date_str = f"{year}-{month:02d}-{day:02d}"    
+        remote_dir, local_dir_mp4, local_dir_frames, output_video, camera_name = cma.setup_camera_directories(cfg, cams, i, date_str)
         
         lgr.log_separator(logger)
         logger.info(f"::: Processing camera {camera_name} :::")
@@ -109,7 +112,7 @@ def main(cfg: DictConfig) -> None:
         [os.remove(file) for file in hq_frames_dir.glob('*.jpg')]
         [os.remove(file) for file in local_dir_mp4.glob('*.mp4')]
         
-        logger.info("::: Successfull transfer of video to Pylos. :::")
+        logger.info("::: Successful transfer of video to Pylos. :::")
         lgr.log_separator(logger)
     
 if __name__=='__main__':
