@@ -1,0 +1,30 @@
+raw_video_path: /mnt/geosense/cameras/F4E2C678D10D/08/21/video/F4E2C678D10D_1_0.mp4
+dst_dir: /mnt/geosense/cameras
+remote_dir: /volume1/videos
+set_size: 6
+interval: 3
+NVR:
+  src_dir: /srv/unifi-protect/video
+  dst_dir: /volume1/videos
+paths:
+  logger:
+    dst_dir: logs/
+    dst_dir_NVR: logs/NVR/
+cams:
+  G5Bullet_26: F4E2C678D12A
+  G5Bullet_27: F4E2C678D10D
+  G5Bullet_31: F4E2C678CB5A
+  G5Bullet_32: F4E2C678CCB4
+  G5Bullet_34: F4E2C678CBF2
+  G5Bullet_36: F4E2C678CBBE
+  G5Bullet_39: F4E2C678CBC7
+  G5Bullet_40: F4E2C678CCB5
+  G5Bullet_43: F4E2C679D61A
+ssh:
+  pylos:
+    remote_user: lk1167
+    remote_host: 10.9.7.14
+    remote_dir_base: /mnt/gsdata/projects/ecosense/AngleCam2_0/data/raw_videos
+  NVR:
+    remote_user: root
+    remote_host: 10.6.159.52
