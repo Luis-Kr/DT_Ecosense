@@ -3977,3 +3977,63 @@
 2024-09-06 16:07:20,887 - Module(logger):Line(76) INFO - --------------------------------------------------
 2024-09-06 16:07:20,887 - Module(logger):Line(77) INFO - --------------------------------------------------
 2024-09-06 16:07:20,887 - Module(main):Line(60) INFO - Transfering data from NVR (/volume1/videos/2024-08-31/G5Bullet_27/*0.mp4) to VM (/mnt/geosense/cameras/G5Bullet_27/mp4)...
+2024-09-06 16:22:52,678 - Module(main):Line(66) INFO - Extract frames...
+2024-09-06 16:22:52,679 - Module(camera):Line(33) INFO - Renaming .mp4 files...
+2024-09-06 16:22:52,679 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_1_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_000_G5Bullet_27_F4E2C678D10D_2024-08-31_1_0.mp4
+2024-09-06 16:22:52,679 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_2_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_001_G5Bullet_27_F4E2C678D10D_2024-08-31_2_0.mp4
+2024-09-06 16:22:52,679 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_3_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_002_G5Bullet_27_F4E2C678D10D_2024-08-31_3_0.mp4
+2024-09-06 16:22:52,679 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_4_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_003_G5Bullet_27_F4E2C678D10D_2024-08-31_4_0.mp4
+2024-09-06 16:22:52,679 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_5_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_004_G5Bullet_27_F4E2C678D10D_2024-08-31_5_0.mp4
+2024-09-06 16:22:52,680 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_6_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_005_G5Bullet_27_F4E2C678D10D_2024-08-31_6_0.mp4
+2024-09-06 16:22:52,680 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_7_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_006_G5Bullet_27_F4E2C678D10D_2024-08-31_7_0.mp4
+2024-09-06 16:22:52,680 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_8_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_007_G5Bullet_27_F4E2C678D10D_2024-08-31_8_0.mp4
+2024-09-06 16:22:52,680 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_9_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_008_G5Bullet_27_F4E2C678D10D_2024-08-31_9_0.mp4
+2024-09-06 16:22:52,680 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_10_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_009_G5Bullet_27_F4E2C678D10D_2024-08-31_10_0.mp4
+2024-09-06 16:22:52,680 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_11_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_010_G5Bullet_27_F4E2C678D10D_2024-08-31_11_0.mp4
+2024-09-06 16:22:52,680 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_12_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_011_G5Bullet_27_F4E2C678D10D_2024-08-31_12_0.mp4
+2024-09-06 16:22:52,680 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_13_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_012_G5Bullet_27_F4E2C678D10D_2024-08-31_13_0.mp4
+2024-09-06 16:22:52,680 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_14_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_013_G5Bullet_27_F4E2C678D10D_2024-08-31_14_0.mp4
+2024-09-06 16:22:52,681 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_15_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_014_G5Bullet_27_F4E2C678D10D_2024-08-31_15_0.mp4
+2024-09-06 16:22:52,681 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_16_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_015_G5Bullet_27_F4E2C678D10D_2024-08-31_16_0.mp4
+2024-09-06 16:22:52,681 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_17_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_016_G5Bullet_27_F4E2C678D10D_2024-08-31_17_0.mp4
+2024-09-06 16:22:52,681 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_18_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_017_G5Bullet_27_F4E2C678D10D_2024-08-31_18_0.mp4
+2024-09-06 16:22:52,681 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_19_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_018_G5Bullet_27_F4E2C678D10D_2024-08-31_19_0.mp4
+2024-09-06 16:22:52,681 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_20_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_019_G5Bullet_27_F4E2C678D10D_2024-08-31_20_0.mp4
+2024-09-06 16:22:52,681 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_21_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_020_G5Bullet_27_F4E2C678D10D_2024-08-31_21_0.mp4
+2024-09-06 16:22:52,681 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_22_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_021_G5Bullet_27_F4E2C678D10D_2024-08-31_22_0.mp4
+2024-09-06 16:22:52,681 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_23_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_022_G5Bullet_27_F4E2C678D10D_2024-08-31_23_0.mp4
+2024-09-06 16:22:52,682 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_24_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_023_G5Bullet_27_F4E2C678D10D_2024-08-31_24_0.mp4
+2024-09-06 16:22:52,682 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_25_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_024_G5Bullet_27_F4E2C678D10D_2024-08-31_25_0.mp4
+2024-09-06 16:22:52,682 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_26_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_025_G5Bullet_27_F4E2C678D10D_2024-08-31_26_0.mp4
+2024-09-06 16:22:52,682 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_27_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_026_G5Bullet_27_F4E2C678D10D_2024-08-31_27_0.mp4
+2024-09-06 16:22:52,682 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_28_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_027_G5Bullet_27_F4E2C678D10D_2024-08-31_28_0.mp4
+2024-09-06 16:22:52,682 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_29_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_028_G5Bullet_27_F4E2C678D10D_2024-08-31_29_0.mp4
+2024-09-06 16:22:52,682 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_30_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_029_G5Bullet_27_F4E2C678D10D_2024-08-31_30_0.mp4
+2024-09-06 16:22:52,682 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_31_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_030_G5Bullet_27_F4E2C678D10D_2024-08-31_31_0.mp4
+2024-09-06 16:22:52,682 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_32_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_031_G5Bullet_27_F4E2C678D10D_2024-08-31_32_0.mp4
+2024-09-06 16:22:52,682 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_33_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_032_G5Bullet_27_F4E2C678D10D_2024-08-31_33_0.mp4
+2024-09-06 16:22:52,683 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_34_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_033_G5Bullet_27_F4E2C678D10D_2024-08-31_34_0.mp4
+2024-09-06 16:22:52,683 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_35_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_034_G5Bullet_27_F4E2C678D10D_2024-08-31_35_0.mp4
+2024-09-06 16:22:52,683 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_36_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_035_G5Bullet_27_F4E2C678D10D_2024-08-31_36_0.mp4
+2024-09-06 16:22:52,683 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_37_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_036_G5Bullet_27_F4E2C678D10D_2024-08-31_37_0.mp4
+2024-09-06 16:22:52,683 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_38_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_037_G5Bullet_27_F4E2C678D10D_2024-08-31_38_0.mp4
+2024-09-06 16:22:52,683 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_39_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_038_G5Bullet_27_F4E2C678D10D_2024-08-31_39_0.mp4
+2024-09-06 16:22:52,683 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_40_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_039_G5Bullet_27_F4E2C678D10D_2024-08-31_40_0.mp4
+2024-09-06 16:22:52,683 - Module(camera):Line(39) INFO - Renamed /mnt/geosense/cameras/G5Bullet_27/mp4/G5Bullet_27_F4E2C678D10D_2024-08-31_41_0.mp4 to /mnt/geosense/cameras/G5Bullet_27/mp4/File_040_G5Bullet_27_F4E2C678D10D_2024-08-31_41_0.mp4
+2024-09-06 16:22:52,684 - Module(main):Line(72) INFO - Processing file /mnt/geosense/cameras/G5Bullet_27/mp4/File_000_G5Bullet_27_F4E2C678D10D_2024-08-31_1_0.mp4...
+2024-09-06 16:22:52,769 - Module(data_preprocessing):Line(132) INFO - Frame rate: 0.9829266446442109
+2024-09-06 16:22:52,769 - Module(data_preprocessing):Line(133) INFO - Extracting frames from video '/mnt/geosense/cameras/G5Bullet_27/mp4/File_000_G5Bullet_27_F4E2C678D10D_2024-08-31_1_0.mp4'...
+2024-09-06 16:22:53,015 - Module(data_preprocessing):Line(169) INFO - Extracting frame 0...
+2024-09-06 16:22:53,015 - Module(data_preprocessing):Line(173) INFO - Frame number internal: 117
+2024-09-06 16:22:53,903 - Module(data_preprocessing):Line(169) INFO - Extracting frame 1...
+2024-09-06 16:22:53,903 - Module(data_preprocessing):Line(173) INFO - Frame number internal: 234
+2024-09-06 16:22:54,652 - Module(data_preprocessing):Line(169) INFO - Extracting frame 2...
+2024-09-06 16:22:54,652 - Module(data_preprocessing):Line(173) INFO - Frame number internal: 351
+2024-09-06 16:22:55,388 - Module(data_preprocessing):Line(169) INFO - Extracting frame 3...
+2024-09-06 16:22:55,388 - Module(data_preprocessing):Line(173) INFO - Frame number internal: 468
+2024-09-06 16:22:56,306 - Module(data_preprocessing):Line(169) INFO - Extracting frame 4...
+2024-09-06 16:22:56,307 - Module(data_preprocessing):Line(173) INFO - Frame number internal: 585
+2024-09-06 16:22:57,269 - Module(data_preprocessing):Line(169) INFO - Extracting frame 5...
+2024-09-06 16:22:57,269 - Module(data_preprocessing):Line(173) INFO - Frame number internal: 702
+2024-09-06 16:22:58,122 - Module(data_preprocessing):Line(169) INFO - Extracting frame 6...
+2024-09-06 16:22:58,122 - Module(data_preprocessing):Line(173) INFO - Frame number internal: 819
