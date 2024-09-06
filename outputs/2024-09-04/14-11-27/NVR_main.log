@@ -1,0 +1,80 @@
+[2024-09-04 14:11:27,589][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,590][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,590][main][INFO] - Processing camera G5Bullet_07 with MAC address F4E2C678CCA0
+[2024-09-04 14:11:27,591][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:11:27,591][main][INFO] - Destination directory: /volume1/videos/G5Bullet_07
+[2024-09-04 14:11:27,591][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,591][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,592][main][ERROR] - Failed to process camera G5Bullet_07 with MAC address F4E2C678CCA0: convert_videos() got an unexpected keyword argument 'src_dir'
+[2024-09-04 14:11:27,664][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,665][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,665][main][INFO] - Processing camera G5Bullet_26 with MAC address F4E2C678D12A
+[2024-09-04 14:11:27,666][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:11:27,666][main][INFO] - Destination directory: /volume1/videos/G5Bullet_26
+[2024-09-04 14:11:27,666][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,667][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,667][main][ERROR] - Failed to process camera G5Bullet_26 with MAC address F4E2C678D12A: convert_videos() got an unexpected keyword argument 'src_dir'
+[2024-09-04 14:11:27,668][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,669][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,669][main][INFO] - Processing camera G5Bullet_27 with MAC address F4E2C678D10D
+[2024-09-04 14:11:27,670][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:11:27,670][main][INFO] - Destination directory: /volume1/videos/G5Bullet_27
+[2024-09-04 14:11:27,670][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,671][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,671][main][ERROR] - Failed to process camera G5Bullet_27 with MAC address F4E2C678D10D: convert_videos() got an unexpected keyword argument 'src_dir'
+[2024-09-04 14:11:27,673][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,673][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,674][main][INFO] - Processing camera G5Bullet_31 with MAC address F4E2C678CB5A
+[2024-09-04 14:11:27,674][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:11:27,674][main][INFO] - Destination directory: /volume1/videos/G5Bullet_31
+[2024-09-04 14:11:27,675][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,676][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,676][main][ERROR] - Failed to process camera G5Bullet_31 with MAC address F4E2C678CB5A: convert_videos() got an unexpected keyword argument 'src_dir'
+[2024-09-04 14:11:27,678][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,678][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,679][main][INFO] - Processing camera G5Bullet_32 with MAC address F4E2C678CCB4
+[2024-09-04 14:11:27,679][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:11:27,679][main][INFO] - Destination directory: /volume1/videos/G5Bullet_32
+[2024-09-04 14:11:27,680][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,680][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,680][main][ERROR] - Failed to process camera G5Bullet_32 with MAC address F4E2C678CCB4: convert_videos() got an unexpected keyword argument 'src_dir'
+[2024-09-04 14:11:27,682][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,682][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,683][main][INFO] - Processing camera G5Bullet_34 with MAC address F4E2C678CBF2
+[2024-09-04 14:11:27,683][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:11:27,683][main][INFO] - Destination directory: /volume1/videos/G5Bullet_34
+[2024-09-04 14:11:27,683][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,684][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,684][main][ERROR] - Failed to process camera G5Bullet_34 with MAC address F4E2C678CBF2: convert_videos() got an unexpected keyword argument 'src_dir'
+[2024-09-04 14:11:27,685][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,686][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,686][main][INFO] - Processing camera G5Bullet_36 with MAC address F4E2C678CBBE
+[2024-09-04 14:11:27,687][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:11:27,687][main][INFO] - Destination directory: /volume1/videos/G5Bullet_36
+[2024-09-04 14:11:27,687][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,687][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,688][main][ERROR] - Failed to process camera G5Bullet_36 with MAC address F4E2C678CBBE: convert_videos() got an unexpected keyword argument 'src_dir'
+[2024-09-04 14:11:27,689][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,689][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,689][main][INFO] - Processing camera G5Bullet_39 with MAC address F4E2C678CBC7
+[2024-09-04 14:11:27,690][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:11:27,690][main][INFO] - Destination directory: /volume1/videos/G5Bullet_39
+[2024-09-04 14:11:27,690][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,690][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,691][main][ERROR] - Failed to process camera G5Bullet_39 with MAC address F4E2C678CBC7: convert_videos() got an unexpected keyword argument 'src_dir'
+[2024-09-04 14:11:27,692][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,693][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,693][main][INFO] - Processing camera G5Bullet_40 with MAC address F4E2C678CCB5
+[2024-09-04 14:11:27,693][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:11:27,694][main][INFO] - Destination directory: /volume1/videos/G5Bullet_40
+[2024-09-04 14:11:27,694][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,695][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,695][main][ERROR] - Failed to process camera G5Bullet_40 with MAC address F4E2C678CCB5: convert_videos() got an unexpected keyword argument 'src_dir'
+[2024-09-04 14:11:27,696][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,697][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,697][main][INFO] - Processing camera G5Bullet_43 with MAC address F4E2C679D61A
+[2024-09-04 14:11:27,697][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:11:27,697][main][INFO] - Destination directory: /volume1/videos/G5Bullet_43
+[2024-09-04 14:11:27,698][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,698][main][INFO] - --------------------------------------------------
+[2024-09-04 14:11:27,699][main][ERROR] - Failed to process camera G5Bullet_43 with MAC address F4E2C679D61A: convert_videos() got an unexpected keyword argument 'src_dir'
