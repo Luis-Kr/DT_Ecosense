@@ -14,6 +14,9 @@ import time
 # Custom imports
 import utils.logger as lgr
 
+# Initialize the OCR reader with GPU disabled
+reader = easyocr.Reader(['en'], gpu=False)
+
 def group_files_in_sets(dir_path, set_size=30):
     try:
         # Define the directory path
@@ -95,26 +98,32 @@ def extract_camera_metadata(output_dir, image_paths):
     return filenames
 
 
-def extract_camera_name_and_date(frame):
+def extract_camera_name_and_date(logger, frame, reader, frame_timestamp_error):
     # Initialize the OCR reader
-    reader = easyocr.Reader(['en'])
+    #reader = easyocr.Reader(['en'], gpu=False)
 
     # Read the image
     image = frame
-
+ 
     # Read the date and camera name from the image
     result = reader.readtext(image)
 
     # Extract and format the timestamp from the text
-    timestamp_string = result[0][1].replace(' ', '').replace(':', '.')
-    parsed_timestamp = datetime.strptime(timestamp_string, '%Y-%m-%d%I.%M.%S%p')
-    timestamp_24h = parsed_timestamp.strftime('%Y-%m-%d %H:%M:%S')
-    filename_safe_timestamp = timestamp_24h.replace(' ', '_').replace(':', '-')
+    try: 
+        timestamp_string = result[0][1].replace(' ', '').replace(':', '.')
+        parsed_timestamp = datetime.strptime(timestamp_string, '%Y-%m-%d%I.%M.%S%p')
+        timestamp_24h = parsed_timestamp.strftime('%Y-%m-%d %H:%M:%S')
+        filename_safe_timestamp = timestamp_24h.replace(' ', '_').replace(':', '-')
+    except Exception as e:
+        logger.error(f"An error occurred with the timestamp: {e}")
+        filename_safe_timestamp = f"frame_timestamp_error_{frame_timestamp_error:03d}"
+        logger.info(f"Now saving as: {filename_safe_timestamp}")
+        frame_timestamp_error += 1
 
     # Extract the camera name from the text
     camera_name = result[1][1][-2:]
 
-    return camera_name, filename_safe_timestamp.split('_')[0]
+    return camera_name, filename_safe_timestamp, frame_timestamp_error
 
 
 def extract_frames(logger, video_path, output_dir, frame_number=0):
@@ -180,6 +189,72 @@ def extract_frames(logger, video_path, output_dir, frame_number=0):
     frame_number += frame_number_internal // frames_per_interval
     
     return frame_number
+
+
+def extract_all_frames(logger, video_path, output_dir):
+    frame_timestamp_error = 0
+    video_capture = cv2.VideoCapture(video_path)
+    
+    if not video_capture.isOpened():
+        logger.info("Error: Could not open video.")
+        return
+    
+    fps = video_capture.get(cv2.CAP_PROP_FPS)
+    if fps == 0:
+        logger.info("Error: Could not retrieve frame rate.")
+        return
+    
+    logger.info(f"Frame rate: {fps}")
+    logger.info(f"Extracting frames from video '{video_path}'...")
+    
+    # Calculate the frame number corresponding to 3min intervals
+    frame_number_internal = 0
+    
+    # Record the start time
+    start_time = time.time()
+    
+    while True:
+        elapsed_time = (time.time() - start_time) / 60
+        logger.info(f"Elapsed time: {elapsed_time} minutes")
+        
+        # Check if the elapsed time exceeds 5 minutes (300 seconds)
+        # if elapsed_time > 600:
+        #     logger.info("Break: Processing time exceeds 10 minutes.")
+        #     break
+        
+        # Get the total number of frames in the video
+        total_frames = video_capture.get(cv2.CAP_PROP_FRAME_COUNT)
+        
+        # Check if frame_number_internal exceeds the total number of frames
+        if frame_number_internal >= total_frames:
+            logger.info("Break: frame_number_internal exceeds total number of frames.")
+            break
+        
+        # Set the video capture position to the next frame of interest
+        #video_capture.set(cv2.CAP_PROP_POS_FRAMES, frame_number_internal)
+        
+        ret, frame = video_capture.read()
+        if not ret:
+            logger.info("Break: Could not read frame or video is fully processed.")
+            break
+        
+        # Save every frame
+        if frame_number_internal % 1 == 0:
+            camera_name, filename_safe_timestamp, frame_timestamp_error = extract_camera_name_and_date(logger, frame, reader, frame_timestamp_error)
+            frame_filename = f'{output_dir}/G5Bullet_{int(camera_name):02d}_{filename_safe_timestamp}.jpg'
+            logger.info(f"Frame filename: {frame_filename}")
+            cv2.imwrite(frame_filename, frame)
+            logger.info(f"Extracting frame {frame_number_internal}...")
+        
+        # Increment frame_number_internal by frames_per_interval to skip frames
+        frame_number_internal += 1
+        logger.info(f"Frame number internal: {frame_number_internal}")
+    
+    video_capture.release()
+    logger.info("All frames extracted.")
+    logger.info(f"Frame number: {frame_number_internal}")
+    
+    return None
 
 
 def generate_video_from_images(image_folder, video_name, codec='avc1', frame_rate=120):
