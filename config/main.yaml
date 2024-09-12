@@ -4,6 +4,7 @@ defaults:
   - cams: ../utils/cam_mac_address
   - ssh: ../utils/ssh
   - pylos: ../utils/pylos
+  - calibration: ../utils/calibration
 
 raw_video_path: "/mnt/geosense/cameras/F4E2C678D10D/08/21/video/F4E2C678D10D_1_0.mp4"
 

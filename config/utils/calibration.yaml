@@ -1,0 +1,6 @@
+log_dir: /home/lk1167/DT_Ecosense/logs/Pylos/calibration
+camera_name: "26"
+year: 2024
+month: 8
+day: 29
+num_workers: 4

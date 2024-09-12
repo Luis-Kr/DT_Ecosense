@@ -8,7 +8,7 @@ import os
 import logging
 import sys
 import concurrent.futures
-import multiprocessing
+import multiprocessing as mp
 
 # Custom imports
 import utils.logger as lgr
@@ -26,10 +26,10 @@ warnings.filterwarnings("ignore")
 # get the path of the current file
 root_dir = Path(__file__).parent.parent.absolute()
 
-def get_date_yesterday() -> Tuple[int, int, int]:
+def get_date_yesterday(cfg: DictConfig) -> Tuple[int, int, int]:
     """Get the date of yesterday."""
     #yesterday = datetime.now() - timedelta(days=5)
-    yesterday = datetime(2024, 9, 2)
+    yesterday = datetime(cfg.pylos.year, cfg.pylos.month, cfg.pylos.day)
     return yesterday.year, yesterday.month, yesterday.day
 
 
@@ -72,33 +72,38 @@ def main(cfg: DictConfig) -> None:
     # Clear the hydra config cache
     lgr.clear_hydra_cache()
     
-    date_yesterday = datetime(2024, 9, 2).strftime("%Y-%m-%d")
-    logger = lgr.logger_setup('main', Path(cfg.pylos.log_dir) / f"{date_yesterday}.log")
+    date_yesterday = datetime(cfg.pylos.year, cfg.pylos.month, cfg.pylos.day).strftime("%Y-%m-%d")
+    logger = lgr.logger_setup('main', Path(cfg.pylos.log_dir) / cfg.pylos.camera_name / f"{date_yesterday}.log")
     cams = cma.get_cameras(cfg)
-    year, month, day = get_date_yesterday()
+    year, month, day = get_date_yesterday(cfg)
     
-    # extract frames
-    for i in range(len(cams)):
-        try:
-            # Set up the camera directories
-            date_str = f"{year}-{month:02d}-{day:02d}"  
-            camera_name, cam_mac_address = cams[i]  
-            #remote_dir, local_dir_mp4, local_dir_frames, output_video, camera_name = cma.setup_camera_directories(cfg, cams, i, date_str)
-            
-            lgr.log_separator(logger)
-            logger.info(f"::: Processing camera {camera_name} :::")
-            lgr.log_separator(logger)
-            
-            raw_video_dir = Path(cfg.pylos.base_dir) / "raw_videos" / f"{camera_name}" / f"{year}" / f"{month:02d}" / f"{day:02d}" / f"{camera_name}_{date_str}_fr30.mp4"
-            raw_frames_dir = Path(cfg.pylos.base_dir) / "raw_frames" / f"{camera_name}" / f"{year}" / f"{month:02d}" / f"{day:02d}"
-            
-            logger.info(f"Extracting frames from {raw_video_dir}...")
-            _ = dp.extract_all_frames(logger=logger, 
+    try:
+        # Set up the camera directories
+        date_str = f"{year}-{month:02d}-{day:02d}"  
+        camera_name = cfg.pylos.camera_name
+        
+        #camera_name, cam_mac_address = cams[i]  
+        #remote_dir, local_dir_mp4, local_dir_frames, output_video, camera_name = cma.setup_camera_directories(cfg, cams, i, date_str)
+        
+        lgr.log_separator(logger)
+        logger.info(f"::: Processing camera {camera_name} :::")
+        lgr.log_separator(logger)
+        
+        raw_video_dir = Path(cfg.pylos.base_dir) / "raw_videos" / f"{camera_name}" / f"{year}" / f"{month:02d}" / f"{day:02d}" / f"{camera_name}_{date_str}_fr30.mp4"
+        raw_frames_dir = Path(cfg.pylos.base_dir) / "raw_frames" / f"{camera_name}" / f"{year}" / f"{month:02d}" / f"{day:02d}"
+        
+        logger.info(f"Extracting frames from {raw_video_dir}...")
+        _ = dp.extract_all_frames(logger=logger, 
                                     video_path=raw_video_dir, 
                                     output_dir=raw_frames_dir)
-        except Exception as e:
-            logger.error(f"Error processing camera: {e}")
-            continue
+        
+        _ = dp.rename_images_with_date(logger=logger, 
+                                        image_dir=raw_frames_dir, 
+                                        output_dir=raw_frames_dir)
+                                        
+                                        
+    except Exception as e:
+        logger.error(f"Error processing camera: {e}")
     
 #     # apply transformation matrix
     
@@ -109,6 +114,7 @@ def main(cfg: DictConfig) -> None:
     
     
 if __name__=='__main__':
+    #mp.set_start_method('spawn')
     main()
     
     
