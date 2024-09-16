@@ -7,3 +7,4 @@ outputs/
 nohup.out
 *.log
 *.tmp
+logs/
