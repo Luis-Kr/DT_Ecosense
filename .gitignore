@@ -5,3 +5,6 @@ config/utils/paths.yaml
 config/utils/ssh.yaml
 outputs/
 nohup.out
+*.log
+*.tmp
+logs/
