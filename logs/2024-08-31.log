@@ -4159,6 +4159,7 @@
 2024-09-06 16:23:38,697 - Module(data_preprocessing):Line(173) INFO - Frame number internal: 119
 2024-09-06 16:23:39,462 - Module(data_preprocessing):Line(169) INFO - Extracting frame 52...
 2024-09-06 16:23:39,463 - Module(data_preprocessing):Line(173) INFO - Frame number internal: 238
+<<<<<<< HEAD
 2024-09-06 16:23:40,451 - Module(data_preprocessing):Line(169) INFO - Extracting frame 53...
 2024-09-06 16:23:40,452 - Module(data_preprocessing):Line(173) INFO - Frame number internal: 357
 2024-09-06 16:23:41,151 - Module(data_preprocessing):Line(169) INFO - Extracting frame 54...
@@ -19300,3 +19301,5 @@
 2024-09-07 16:59:00,980 - Module(main):Line(125) INFO - ::: Successful transfer of video to Pylos. :::
 2024-09-07 16:59:00,981 - Module(logger):Line(76) INFO - --------------------------------------------------
 2024-09-07 16:59:00,981 - Module(logger):Line(77) INFO - --------------------------------------------------
+=======
+>>>>>>> 7df94ba0d962b4321254e7c8b99c428feef000b5
