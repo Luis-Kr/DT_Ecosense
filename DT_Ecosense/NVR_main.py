@@ -22,7 +22,9 @@ root_dir = Path(__file__).parent.parent.absolute()
 def get_date_yesterday() -> Tuple[int, int, int]:
     """Get the date of yesterday."""
     #yesterday = datetime.now() - timedelta(days=4)
-    yesterday = datetime(2024, 8, 31)
+    # Starting 2024-09-14 include the new cameras!!!
+    #yesterday = datetime(2024, 9, 14)
+    yesterday = datetime.now() - timedelta(days=1)
     return yesterday.year, yesterday.month, yesterday.day
 
 
