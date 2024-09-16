@@ -14,8 +14,7 @@ def get_cameras(cfg: DictConfig) -> list:
     return list(cfg.cams.items())
 
 
-def setup_camera_directories(cfg: DictConfig, cams: List[Tuple[str, str]], i: int, date_str: str) -> Tuple[Path, Path]:
-    camera_name, cam_mac_address = cams[i]
+def setup_camera_directories(cfg: DictConfig, camera_name: str, date_str: str) -> Tuple[Path, Path]:
     remote_dir = Path(cfg.remote_dir) / date_str / camera_name / '*0.mp4'
     local_dir_mp4 = Path(cfg.dst_dir) / camera_name / 'mp4'
     local_dir_frames = Path(cfg.dst_dir) / camera_name / 'frames'
@@ -25,7 +24,7 @@ def setup_camera_directories(cfg: DictConfig, cams: List[Tuple[str, str]], i: in
     for directory in [local_dir_mp4, local_dir_frames, output_video]:
         directory.mkdir(parents=True, exist_ok=True)
 
-    return remote_dir, local_dir_mp4, local_dir_frames, output_video, camera_name
+    return remote_dir, local_dir_mp4, local_dir_frames, output_video
 
 
 def rename_mp4_files(logger: logging.Logger, local_dir_mp4: Path) -> None:
