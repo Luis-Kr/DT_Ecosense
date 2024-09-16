@@ -45,12 +45,12 @@ def main(cfg: DictConfig) -> None:
     #date_yesterday = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
     camera_name = cfg.VM.camera_name   
     date_yesterday = datetime(cfg.VM.year, cfg.VM.month, cfg.VM.day).strftime("%Y-%m-%d")
-    logger = lgr.setup_logger(cfg, str(root_dir), date_yesterday, camera_name)
+    logger = lgr.setup_logger_VM(cfg, str(root_dir), date_yesterday, camera_name)
     year, month, day = get_date_yesterday(cfg)
 
     # Set up the camera directories
     date_str = f"{year}-{month:02d}-{day:02d}" 
-    remote_dir, local_dir_mp4, local_dir_frames, output_video = cma.setup_camera_directories(cfg, camera_name, date_str)
+    remote_dir, local_dir_mp4, local_dir_frames, output_video = cma.setup_camera_directories_VM(cfg, camera_name, date_str)
     
     lgr.log_separator(logger)
     logger.info(f"::: Processing camera {camera_name} :::")
