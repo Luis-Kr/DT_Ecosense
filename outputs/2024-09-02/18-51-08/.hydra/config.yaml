@@ -1,0 +1,12 @@
+raw_video_path: /mnt/geosense/cameras/F4E2C678D10D/08/21/video/F4E2C678D10D_1_0.mp4
+dst_dir: /mnt/geosense/cameras/G5Bullet_07/
+set_size: 60
+NVR:
+  src_dir: /srv/unifi-protect/video
+  dst_dir: /volume1/videos
+paths:
+  logger:
+    dst_dir: logs/
+    dst_dir_NVR: logs/NVR/
+cams:
+  G5Bullet_07: F4E2C678CCA0

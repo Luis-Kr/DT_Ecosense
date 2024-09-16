@@ -1,0 +1,8 @@
+[2024-09-04 14:24:12,597][main][INFO] - --------------------------------------------------
+[2024-09-04 14:24:12,616][main][INFO] - --------------------------------------------------
+[2024-09-04 14:24:12,617][main][INFO] - ::: Processing camera G5Bullet_07 with MAC address F4E2C678CCA0 :::
+[2024-09-04 14:24:12,617][main][INFO] - Source directory: /srv/unifi-protect/video/2024/09/03
+[2024-09-04 14:24:12,617][main][INFO] - Destination directory: /volume1/videos/G5Bullet_07
+[2024-09-04 14:24:12,618][main][INFO] - --------------------------------------------------
+[2024-09-04 14:24:12,618][main][INFO] - --------------------------------------------------
+[2024-09-04 14:24:27,608][main][INFO] - Successfully converted /srv/unifi-protect/video/2024/09/03/F4E2C678CCA0_0_rotating_1725382103919.ubv to /volume1/videos/G5Bullet_07/G5Bullet_07_F4E2C678CCA0_2024-09-03_1

@@ -1,0 +1,9 @@
+base_dir: /mnt/gsdata/projects/ecosense/AngleCam2_0/data
+
+log_dir: logs/Pylos
+
+camera_name: G5Bullet_07
+
+year: 2024
+month: 8
+day: 30

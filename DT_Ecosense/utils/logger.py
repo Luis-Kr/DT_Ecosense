@@ -1,5 +1,9 @@
 import logging 
 from pathlib import Path
+import hydra
+from hydra import compose, initialize
+from omegaconf import DictConfig
+from typing import List, Tuple
 
 formatter = logging.Formatter('%(asctime)s - Module(%(module)s):Line(%(lineno)d) %(levelname)s - %(message)s')
 
@@ -59,3 +63,26 @@ def logger_setup(name, log_file, level=logging.INFO):
     logger.addHandler(handler)
 
     return logger
+
+
+def clear_hydra_cache() -> None:
+    """Clear the Hydra config cache."""
+    hydra.core.global_hydra.GlobalHydra.instance().clear()
+
+
+def log_separator(logger: logging.Logger) -> None:
+    """Log separator lines to the provided logger."""
+    separator = "--------------------------------------------------"
+    logger.info(separator)
+    logger.info(separator)
+    
+def setup_logger(cfg: DictConfig, date_today: str) -> logging.Logger:
+    """Set up the logger."""
+    root_dir = Path(cfg.paths.logger.dst_dir)
+    log_file = root_dir / f"{date_today}.log"
+    return logger_setup('main', log_file)
+    
+def setup_logger_VM(cfg: DictConfig, rd: str, date_today: str, camera_name: str) -> logging.Logger:
+    """Set up the logger."""
+    log_file = Path(rd) / cfg.paths.logger.dst_dir_NVR / camera_name / f"{date_today}.log"
+    return logger_setup('main', log_file)
