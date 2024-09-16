@@ -14,6 +14,19 @@ def get_cameras(cfg: DictConfig) -> list:
     return list(cfg.cams.items())
 
 
+def setup_camera_directories_VM(cfg: DictConfig, camera_name: str, date_str: str) -> Tuple[Path, Path]:
+    remote_dir = Path(cfg.remote_dir) / date_str / camera_name / '*0.mp4'
+    local_dir_mp4 = Path(cfg.dst_dir) / camera_name / 'mp4'
+    local_dir_frames = Path(cfg.dst_dir) / camera_name / 'frames'
+    output_video = Path(cfg.dst_dir) / camera_name / 'video_timelapse_export'
+    
+    # Create the destination directories if they do not exist
+    for directory in [local_dir_mp4, local_dir_frames, output_video]:
+        directory.mkdir(parents=True, exist_ok=True)
+
+    return remote_dir, local_dir_mp4, local_dir_frames, output_video
+
+
 def setup_camera_directories(cfg: DictConfig, cams: List[Tuple[str, str]], i: int, date_str: str) -> Tuple[Path, Path]:
     camera_name, cam_mac_address = cams[i]
     remote_dir = Path(cfg.remote_dir) / date_str / camera_name / '*0.mp4'
@@ -60,3 +73,4 @@ def extract_number(file_name):
     """Extracts the first number found in the file name."""
     match = re.search(r'\d+', file_name)
     return int(match.group()) if match else float('inf')
+

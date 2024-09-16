@@ -76,9 +76,13 @@ def log_separator(logger: logging.Logger) -> None:
     logger.info(separator)
     logger.info(separator)
     
-    
 def setup_logger(cfg: DictConfig, date_today: str) -> logging.Logger:
     """Set up the logger."""
     root_dir = Path(cfg.paths.logger.dst_dir)
     log_file = root_dir / f"{date_today}.log"
+    return logger_setup('main', log_file)
+    
+def setup_logger_VM(cfg: DictConfig, rd: str, date_today: str, camera_name: str) -> logging.Logger:
+    """Set up the logger."""
+    log_file = Path(rd) / cfg.paths.logger.dst_dir_NVR / camera_name / f"{date_today}.log"
     return logger_setup('main', log_file)

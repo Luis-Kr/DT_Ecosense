@@ -1,0 +1,42 @@
+VM wrapper started at Mo 16. Sep 12:21:35 CEST 2024
+Traceback (most recent call last):
+  File "/home/geosense/Documents/DT_Ecosense/DT_Ecosense/utils/VM/VM_wrapper.py", line 26, in <module>
+    dates = [get_previous_day()]
+  File "/home/geosense/Documents/DT_Ecosense/DT_Ecosense/utils/VM/VM_wrapper.py", line 7, in get_previous_day
+    previous_date = datetime.now() - timedelta(days=1)
+NameError: name 'datetime' is not defined
+VM wrapper started at Mo 16. Sep 12:21:47 CEST 2024
+Traceback (most recent call last):
+  File "/home/geosense/Documents/DT_Ecosense/DT_Ecosense/utils/VM/VM_wrapper.py", line 26, in <module>
+    dates = [get_previous_day()]
+  File "/home/geosense/Documents/DT_Ecosense/DT_Ecosense/utils/VM/VM_wrapper.py", line 7, in get_previous_day
+    previous_date = datetime.now() - timedelta(days=1)
+NameError: name 'datetime' is not defined
+VM wrapper started at Mo 16. Sep 12:22:00 CEST 2024
+Traceback (most recent call last):
+  File "/home/geosense/Documents/DT_Ecosense/DT_Ecosense/utils/VM/VM_wrapper.py", line 26, in <module>
+    dates = [get_previous_day()]
+  File "/home/geosense/Documents/DT_Ecosense/DT_Ecosense/utils/VM/VM_wrapper.py", line 7, in get_previous_day
+    previous_date = datetime.now() - timedelta(days=1)
+NameError: name 'datetime' is not defined
+VM wrapper started at Mo 16. Sep 12:26:20 CEST 2024
+VM wrapper started at Mo 16. Sep 12:28:02 CEST 2024
+VM wrapper started at Mo 16. Sep 12:28:12 CEST 2024
+VM wrapper started at Mo 16. Sep 12:29:03 CEST 2024
+VM wrapper started at Mo 16. Sep 12:30:38 CEST 2024
+VM wrapper started at Mo 16. Sep 12:30:54 CEST 2024
+Traceback (most recent call last):
+  File "/home/geosense/Documents/DT_Ecosense/DT_Ecosense/utils/VM/VM_wrapper.py", line 26, in <module>
+    dates = [get_previous_day()]
+  File "/home/geosense/Documents/DT_Ecosense/DT_Ecosense/utils/VM/VM_wrapper.py", line 7, in get_previous_day
+    previous_date = datetime.now() - timedelta(days=1)
+NameError: name 'datetime' is not defined
+VM wrapper started at Mo 16. Sep 12:31:22 CEST 2024
+Traceback (most recent call last):
+  File "/home/geosense/Documents/DT_Ecosense/DT_Ecosense/utils/VM/VM_wrapper.py", line 26, in <module>
+    dates = [get_previous_day()]
+  File "/home/geosense/Documents/DT_Ecosense/DT_Ecosense/utils/VM/VM_wrapper.py", line 7, in get_previous_day
+    previous_date = datetime.now() - timedelta(days=1)
+NameError: name 'datetime' is not defined
+VM wrapper started at Mo 16. Sep 12:33:09 CEST 2024
+VM wrapper started at Mo 16. Sep 12:33:53 CEST 2024

@@ -1,5 +1,10 @@
 .DS_Store
 data/
-config/
+config/utils/cam_mac_address.yaml
+config/utils/paths.yaml
+config/utils/ssh.yaml
 outputs/
 nohup.out
+*.log
+*.tmp
+logs/
