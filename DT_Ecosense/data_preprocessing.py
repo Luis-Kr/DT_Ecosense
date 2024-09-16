@@ -346,7 +346,7 @@ def transfer_data_local_remote(remote_user, remote_host, remote_dir, local_dir):
         '--progress',
         '-e', 'ssh',  # Use SSH for the transfer
         local_dir,
-        f'{remote_user}@{remote_host}:{remote_dir}',
+        f'{remote_user}@{remote_host}:{remote_dir}'
     ]
 
     # Execute the rsync command
