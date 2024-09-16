@@ -1,0 +1,12 @@
+2024-09-16 15:58:26,793 - Module(logger):Line(76) INFO - --------------------------------------------------
+2024-09-16 15:58:26,793 - Module(logger):Line(77) INFO - --------------------------------------------------
+2024-09-16 15:58:26,794 - Module(main):Line(56) INFO - ::: Processing camera G5Bullet_32 :::
+2024-09-16 15:58:26,794 - Module(logger):Line(76) INFO - --------------------------------------------------
+2024-09-16 15:58:26,794 - Module(logger):Line(77) INFO - --------------------------------------------------
+2024-09-16 15:58:26,794 - Module(main):Line(59) INFO - Transfering data from NVR (/volume1/videos/2024-09-15/G5Bullet_32/*0.mp4) to VM (/mnt/geosense/cameras/G5Bullet_32/mp4)...
+2024-09-16 15:58:48,842 - Module(logger):Line(76) INFO - --------------------------------------------------
+2024-09-16 15:58:48,842 - Module(logger):Line(77) INFO - --------------------------------------------------
+2024-09-16 15:58:48,842 - Module(main):Line(56) INFO - ::: Processing camera G5Bullet_32 :::
+2024-09-16 15:58:48,842 - Module(logger):Line(76) INFO - --------------------------------------------------
+2024-09-16 15:58:48,842 - Module(logger):Line(77) INFO - --------------------------------------------------
+2024-09-16 15:58:48,842 - Module(main):Line(59) INFO - Transfering data from NVR (/volume1/videos/2024-09-15/G5Bullet_32/*0.mp4) to VM (/mnt/geosense/cameras/G5Bullet_32/mp4)...
