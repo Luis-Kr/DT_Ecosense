@@ -8,3 +8,13 @@
 2024-09-12 02:54:09,365 - Module(data_preprocessing):Line(294) INFO - Initializing OCR reader...
 2024-09-12 02:54:11,037 - Module(data_preprocessing):Line(302) INFO - Found 0 images in directory /mnt/gsdata/projects/ecosense/AngleCam2_0/data/raw_frames/G5Bullet_26/2024/09/04.
 2024-09-12 02:54:11,037 - Module(data_preprocessing):Line(320) INFO - All images processed.
+2024-09-13 15:30:39,682 - Module(logger):Line(76) INFO - --------------------------------------------------
+2024-09-13 15:30:39,683 - Module(logger):Line(77) INFO - --------------------------------------------------
+2024-09-13 15:30:39,683 - Module(Pylos_main):Line(89) INFO - ::: Processing camera G5Bullet_26 :::
+2024-09-13 15:30:39,683 - Module(logger):Line(76) INFO - --------------------------------------------------
+2024-09-13 15:30:39,683 - Module(logger):Line(77) INFO - --------------------------------------------------
+2024-09-13 15:30:39,683 - Module(Pylos_main):Line(95) INFO - Extracting frames from /mnt/gsdata/projects/ecosense/AngleCam2_0/data/raw_videos/G5Bullet_26/2024/09/04/G5Bullet_26_2024-09-04_fr30.mp4...
+2024-09-13 15:30:39,689 - Module(data_preprocessing):Line(174) INFO - Error: Could not open video.
+2024-09-13 15:30:39,689 - Module(data_preprocessing):Line(294) INFO - Initializing OCR reader...
+2024-09-13 15:30:41,333 - Module(data_preprocessing):Line(302) INFO - Found 0 images in directory /mnt/gsdata/projects/ecosense/AngleCam2_0/data/raw_frames/G5Bullet_26/2024/09/04.
+2024-09-13 15:30:41,333 - Module(data_preprocessing):Line(320) INFO - All images processed.
