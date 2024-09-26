@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Previous day's date
-previous_day=$(date -d "yesterday" '+%Y-%m-%d')
+#previous_day=$(date -d "yesterday" '+%Y-%m-%d')
+previous_day="2024-09-16"
 
 # Create the log filename
 log_file="/home/geosense/Documents/DT_Ecosense/logs/NVR/NVR_wrapper/NVR_wrapper_${previous_day}.txt"
