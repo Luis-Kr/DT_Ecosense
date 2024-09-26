@@ -16,6 +16,9 @@ interval: 1 # Every 3 set will be kept (10s --> 6 frames --> 3 = one image per 3
 NVR:
   src_dir: /srv/unifi-protect/video
   dst_dir: /volume1/videos
+  year: 2024
+  month: 8
+  day: 30
 
 VM:
   camera_name: G5Bullet_07
